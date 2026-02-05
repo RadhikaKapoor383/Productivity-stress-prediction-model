@@ -1,4 +1,4 @@
-AI Developer Productivity & Stress Index (AIDPSI) Analysis
+<b>AI Developer Productivity & Stress Index (AIDPSI) Analysis</b>
 
 This project analyzes the impact of AI-assisted tools on software developer productivity and stress using the AIDPSI dataset, which contains coding, behavioral, and cognitive metrics from 1,000 developers. The study explores how AI usage, cognitive load, sleep, and work habits influence task success, productivity, and stress levels.
 
