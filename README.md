@@ -1,5 +1,5 @@
 <h1> AI Developer Productivity and Stress Index Analysis AIDPSI </h1>
-**Overview**
+<h3>Overview</h3>
 
 <p>AIDPSI analyzes how developers interact with AI tools and how these interactions affect productivity and stress levels. Using behavioral indicators and AI interaction data, the project estimates a Developer Productivity Score and a Stress Index.</p>
 
