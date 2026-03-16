@@ -32,7 +32,7 @@ Jupyter Notebook
 
 **Clone the repository:**
 
-git clone ()
+git clone (https://github.com/RadhikaKapoor383/Productivity-stress-prediction-model.git)
 
 cd Productivity-Stress-Prediction-model
 
