@@ -4,12 +4,12 @@ import joblib
 
 st.title("Developer Analytics: Stress & Productivity Predictor")
 
-LR_model = joblib.load('stress_model.pkl')
-dt_model = joblib.load('dt_model.pkl')
-scaler_stress = joblib.load('scaler.pkl')
-scaler_prod = joblib.load('scaler_prod.pkl')
-features_stress = joblib.load('features.pkl')
-features_prod = joblib.load('features_prod.pkl')
+LR_model        = joblib.load('models/stress_model.pkl')
+dt_model        = joblib.load('models/dt_model.pkl')
+scaler_stress   = joblib.load('models/scaler.pkl')
+scaler_prod     = joblib.load('models/scaler_prod.pkl')
+features_stress = joblib.load('models/features.pkl')
+features_prod   = joblib.load('models/features_prod.pkl')
 
 st.header("Input Developer Metrics")
 input_data = {}
