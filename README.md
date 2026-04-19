@@ -31,17 +31,23 @@ The sweet spot: using AI as a *collaborator*, not a crutch.
 ```
 Productivity-stress-prediction-model/
 │
-├── Analysis.ipynb          # Full EDA, feature engineering & model training
-├── GUI.py                  # Streamlit app for live predictions
+├── data/
+│   └── AI_Developer_Performance.csv  # Dataset (13 features, real developer metrics)
 │
-├── AI_Developer_Performance.csv  # Dataset (13 features, real developer metrics)
+├── notebooks/
+│   └── Analysis.ipynb                # Full EDA, feature engineering & model training
 │
-├── stress_model.pkl        # Trained Logistic Regression (stress prediction)
-├── dt_model.pkl            # Trained Decision Tree (productivity prediction)
-├── scaler.pkl              # StandardScaler for stress model inputs
-├── scaler_prod.pkl         # StandardScaler for productivity model inputs
-├── features.pkl            # Feature list for stress model
-└── features_prod.pkl       # Feature list for productivity model
+├── models/
+│   ├── stress_model.pkl              # Trained Logistic Regression (stress prediction)
+│   ├── dt_model.pkl                  # Trained Decision Tree (productivity prediction)
+│   ├── scaler.pkl                    # StandardScaler for stress model inputs
+│   ├── scaler_prod.pkl               # StandardScaler for productivity model inputs
+│   ├── features.pkl                  # Feature list for stress model
+│   └── features_prod.pkl             # Feature list for productivity model
+│
+├── GUI.py                            # Streamlit app for live predictions
+├── requirements.txt                  # All dependencies
+└── README.md
 ```
 
 ---
@@ -80,7 +86,7 @@ cd Productivity-stress-prediction-model
 ### 2. Install Dependencies
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter streamlit joblib
+pip install -r requirements.txt
 ```
 
 ### 3. Explore the Analysis Notebook
@@ -88,7 +94,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn jupyter streamlit jobli
 ```bash
 jupyter notebook
 ```
-Open `Analysis.ipynb` to walk through the full EDA, model training, and evaluation pipeline.
+Open `notebooks/Analysis.ipynb` to walk through the full EDA, model training, and evaluation pipeline.
 
 ### 4. Run the Streamlit GUI
 
