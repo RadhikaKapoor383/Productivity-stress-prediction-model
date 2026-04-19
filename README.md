@@ -1,53 +1,138 @@
-<h1> AI Developer Productivity and Stress Index Analysis AIDPSI </h1>
-<h3>Overview</h3>
+# AIDPSI — AI Developer Productivity & Stress Index
 
-<p>AIDPSI analyzes how developers interact with AI tools and how these interactions affect productivity and stress levels. Using behavioral indicators and AI interaction data, the project estimates a Developer Productivity Score and a Stress Index.</p>
+> *Understanding the balance between AI assistance and human cognitive load.*
 
-**Folder Structure**
+A machine learning project that analyzes how developers interact with AI tools and predicts their **Stress Level** and **Productivity Score** based on behavioral and performance metrics. Includes a full EDA notebook and an interactive **Streamlit GUI**.
 
-- `README.md` → this file.
+---
 
-**Key Insight**
+## Key Insight
 
-Moderate AI usage boosts productivity.
-High cognitive load from excessive AI use increases stress.
+| AI Usage Level | Effect |
+|----------------|--------|
+| 🟢 Moderate | Boosts productivity significantly |
+| 🔴 Excessive | Increases cognitive load → raises stress |
 
-**Features**
+The sweet spot: using AI as a *collaborator*, not a crutch.
 
-Analyze AI usage and behavioral patterns
+---
 
-Estimate productivity and stress using ML models
+## ✨ Features
 
-Visualize productivity–stress trends for insights
+- 📊 **Exploratory Data Analysis** — Visualize productivity–stress trends across developer profiles
+- 🤖 **Dual ML Models** — Separate models for stress prediction (Logistic Regression) and productivity prediction (Decision Tree)
+- 🖥️ **Interactive GUI** — Streamlit app to enter your own metrics and get live predictions
+- 📁 **Pre-trained Models** — `.pkl` files included; no retraining needed to run the app
 
-**Tech Stack**
+---
 
-Python | Pandas | NumPy
+## 📂 Project Structure
 
-Scikit-learn | Matplotlib | Seaborn
+```
+Productivity-stress-prediction-model/
+│
+├── Analysis.ipynb          # Full EDA, feature engineering & model training
+├── GUI.py                  # Streamlit app for live predictions
+│
+├── AI_Developer_Performance.csv  # Dataset (13 features, real developer metrics)
+│
+├── stress_model.pkl        # Trained Logistic Regression (stress prediction)
+├── dt_model.pkl            # Trained Decision Tree (productivity prediction)
+├── scaler.pkl              # StandardScaler for stress model inputs
+├── scaler_prod.pkl         # StandardScaler for productivity model inputs
+├── features.pkl            # Feature list for stress model
+└── features_prod.pkl       # Feature list for productivity model
+```
 
-Jupyter Notebook
+---
 
-**How to Run**
+## Dataset Features
 
-**Clone the repository:**
+The dataset (`AI_Developer_Performance.csv`) contains the following columns:
 
-git clone (https://github.com/RadhikaKapoor383/Productivity-stress-prediction-model.git)
+| Feature | Description |
+|---------|-------------|
+| `Hours_Coding` | Daily hours spent writing code |
+| `Lines_of_Code` | Lines of code produced per day |
+| `Bugs_Found` | Number of bugs identified |
+| `Bugs_Fixed` | Number of bugs resolved |
+| `AI_Usage_Hours` | Hours spent using AI tools |
+| `Sleep_Hours` | Developer's sleep duration |
+| `Cognitive_Load` | Self-reported cognitive load score |
+| `Task_Success_Rate` | Percentage of tasks completed successfully |
+| `Coffee_Intake` | Cups of coffee consumed |
+| `Stress_Level` | ⭐ Target — stress score (0–100) |
+| `Task_Duration_Hours` | Average time per task |
+| `Commits` | Number of code commits |
+| `Errors` | Errors encountered during development |
 
-cd Productivity-Stress-Prediction-model
+---
 
-**Run the Jupyter notebook for analysis :**
+## Getting Started
 
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/RadhikaKapoor383/Productivity-stress-prediction-model.git
+cd Productivity-stress-prediction-model
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter streamlit joblib
+```
+
+### 3. Explore the Analysis Notebook
+
+```bash
 jupyter notebook
+```
+Open `Analysis.ipynb` to walk through the full EDA, model training, and evaluation pipeline.
 
-Open the notebook in the notebooks/ folder to explore the data and see the ML workflow.
+### 4. Run the Streamlit GUI
 
-**Run the GUI to interact with models:**
+```bash
+streamlit run GUI.py
+```
+Enter your developer metrics in the browser interface and instantly see predicted stress and productivity levels.
 
-python src/GUI.py
+---
 
-The GUI lets you input developer interaction data and see predicted productivity and stress levels
+## Tech Stack
 
-**Goal**
+| Tool | Purpose |
+|------|---------|
+| Python 3.x | Core language |
+| Pandas & NumPy | Data manipulation |
+| Scikit-learn | ML models & preprocessing |
+| Matplotlib & Seaborn | Data visualization |
+| Streamlit | Interactive GUI |
+| Jupyter Notebook | Analysis & experimentation |
+| Joblib | Model serialization (`.pkl`) |
 
-<p>The aim of this project is to understand the balance between AI assistance and human cognitive load, helping developers use AI tools more effectively without increasing stress.</p>
+---
+
+## Goal
+
+Help developers and engineering teams understand how AI tool usage affects **cognitive load and burnout risk**, so they can adopt AI assistance more mindfully — staying productive without sacrificing wellbeing.
+
+---
+
+## Contributing
+
+1. **Fork** the repository
+2. **Create** a branch: `git checkout -b feature/your-idea`
+3. **Commit** your changes: `git commit -m "Add: description"`
+4. **Push**: `git push origin feature/your-idea`
+5. **Open** a Pull Request
+
+---
+
+## License
+
+Open-source — free for personal, academic, and research use.
+
+---
+
+<p align="center">Built to help developers work smarter, not harder </p>
