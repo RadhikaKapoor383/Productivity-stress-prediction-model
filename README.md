@@ -137,7 +137,8 @@ Help developers and engineering teams understand how AI tool usage affects **cog
 
 ## License
 
-Open-source — free for personal, academic, and research use.
+Open-source — free for personal, academic, and research use. <br />
+[MIT License](LICENSE)
 
 ---
 
