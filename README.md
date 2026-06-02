@@ -127,11 +127,11 @@ Help developers and engineering teams understand how AI tool usage affects **cog
 
 ## Contributing
 
-1. **Fork** the repository
-2. **Create** a branch: `git checkout -b feature/your-idea`
-3. **Commit** your changes: `git commit -m "Add: description"`
-4. **Push**: `git push origin feature/your-idea`
-5. **Open** a Pull Request
+1. **Fork** the repository.
+2. **Create** a branch: `git checkout -b feature/your-idea.`
+3. **Commit** your changes: `git commit -m "Add: description".`
+4. **Push**: `git push origin feature/your-idea.`
+5. **Open** a Pull Request.
 
 ---
 
