@@ -6,6 +6,13 @@ A machine learning project that analyzes how developers interact with AI tools a
 
 ---
 
+## Live Demo
+
+- 🌐 **Try it now:** https://aidpsi-app.streamlit.app/
+- 🚀 Hosted on Streamlit for instant access — no local setup required to explore the app.
+
+---
+
 ## Key Insight
 
 | AI Usage Level | Effect |
@@ -34,7 +41,10 @@ Productivity-stress-prediction-model/
 ├── data/
 │   └── AI_Developer_Performance.csv  # Dataset (13 features, real developer metrics)
 │
-├── notebooks/
+├── media/
+│   └── *.png                          # Demo screenshots and visualization outputs
+│
+├── notebook/
 │   └── Analysis.ipynb                # Full EDA, feature engineering & model training
 │
 ├── models/
@@ -49,6 +59,20 @@ Productivity-stress-prediction-model/
 ├── requirements.txt                  # All dependencies
 └── README.md
 ```
+
+---
+
+## Demo Screenshots
+
+![AI Usage vs Stress](media/scatter_ai_usage_stress.png)
+
+![Feature Boxplot for Stress](media/boxplot_features_stress.png)
+
+![Productivity Decision Tree](media/decision_tree_productivity.png)
+
+![Stress Actual vs Predicted](media/actual_vs_predicted_stress.png)
+
+![Correlation Heatmap](media/correlation_heatmap.png)
 
 ---
 
