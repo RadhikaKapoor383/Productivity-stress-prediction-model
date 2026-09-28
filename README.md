@@ -1,4 +1,4 @@
-# AIDPSI — AI Developer Productivity & Stress Index
+# AIDPSI — AI Developer Productivity & Stress Index 
 
 > *Understanding the balance between AI assistance and human cognitive load.*
 
