@@ -6,7 +6,7 @@ A machine learning project that analyzes how developers interact with AI tools a
 
 ---
 
-## Live Demo
+## Live Demo:
 
 - 🌐 **Try it now:** https://aidpsi-app.streamlit.app/
 - 🚀 Hosted on Streamlit for instant access — no local setup required to explore the app.
